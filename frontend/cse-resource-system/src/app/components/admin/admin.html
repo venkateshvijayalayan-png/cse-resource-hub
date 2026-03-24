@@ -1,0 +1,20 @@
+<h1 class="title">⚙️ Admin Panel</h1>
+
+<form class="form-card" (ngSubmit)="addBook()">
+
+  <label>📖 Book Title</label>
+  <input type="text" name="title" placeholder="Enter book title" [(ngModel)]="title">
+
+  <label>✍️ Author</label>
+  <input type="text" name="author" placeholder="Enter author name" [(ngModel)]="author">
+
+  <label>📚 Subject</label>
+  <input type="text" name="subject" placeholder="Enter subject" [(ngModel)]="subject">
+
+  <button type="submit">➕ Add Book</button>
+
+  <p class="success" *ngIf="books.length>0">
+    ✅ Book Added Successfully
+  </p>
+
+</form>

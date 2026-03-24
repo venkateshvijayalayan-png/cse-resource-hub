@@ -1,0 +1,17 @@
+<h1>📚 Learning Resources Page</h1>
+
+<div class="resource">
+
+  <div *ngFor="let r of resource" class="cards">
+
+    <h3>{{r.title}}</h3>
+
+    <p>{{r.type}}</p>
+
+    <button>
+      <a [href]="r.link" target="_blank">▶ Watch</a>
+    </button>
+
+  </div>
+
+</div>

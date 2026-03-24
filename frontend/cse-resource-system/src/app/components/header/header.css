@@ -1,0 +1,25 @@
+nav
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #222;
+   padding: 10px;
+   border-radius: 25px;
+}
+.title
+{
+   color: white;
+   margin-left: 15px;
+}
+.links a
+{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 120px;
+}
+.links a:hover
+{
+   color:lightblue;
+}

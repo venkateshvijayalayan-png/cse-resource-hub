@@ -1,0 +1,7 @@
+<h1>ADMIN LOGIN PAGE</h1>
+<form (ngSubmit)="login()">
+    <input type="text" placeholder="Username" [(ngModel)]="username" name="username">
+    <input type="password" placeholder="Password" [(ngModel)]="password" name="password">
+    <button type="submit">Submit</button>
+</form>
+<p *ngIf="error">Wrong Credentials</p>

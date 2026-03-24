@@ -1,0 +1,76 @@
+/* Page title */
+
+h1{
+  text-align:center;
+  margin:30px 0;
+  font-size:28px;
+  color:#333;
+}
+
+/* resource container */
+
+.resource{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:22px;
+  padding:20px;
+}
+
+/* resource cards */
+
+.cards{
+  width:230px;
+  padding:18px;
+  border-radius:10px;
+  background:white;
+  border:1px solid #e5e5e5;
+  transition:0.25s;
+}
+
+/* hover effect */
+
+.cards:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* title */
+
+.cards h3{
+  margin-bottom:10px;
+  font-size:18px;
+}
+
+/* text */
+
+.cards p{
+  color:#555;
+  font-size:14px;
+}
+
+/* button */
+
+.cards button{
+  margin-top:12px;
+  padding:6px 14px;
+  border:none;
+  border-radius:6px;
+  background:#4f46e5;
+  color:white;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+/* button hover */
+
+.cards button:hover{
+  background:#4338ca;
+}
+
+/* remove underline from link */
+
+.cards a{
+  text-decoration:none;
+  color:white;
+}

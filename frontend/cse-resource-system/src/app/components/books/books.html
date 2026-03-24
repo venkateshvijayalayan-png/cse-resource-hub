@@ -1,0 +1,19 @@
+<h1 class="title">📚 Recommended Books</h1>
+
+<div class="book">
+
+  <div class="card" *ngFor="let book of books">
+
+    <h3>{{book.title}}</h3>
+
+    <p class="author">Author: {{book.author}}</p>
+
+    <p class="subject">Subject: {{book.subject}}</p>
+
+    <button class="delete-btn" (click)="delete(book._id)">
+      Delete
+    </button>
+
+  </div>
+
+</div>

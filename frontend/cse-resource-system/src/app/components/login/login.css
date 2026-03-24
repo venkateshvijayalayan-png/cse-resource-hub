@@ -1,0 +1,74 @@
+/* Page background */
+
+body{
+  background:linear-gradient(135deg,#eef2ff,#f8fafc);
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Title */
+
+h1{
+  text-align:center;
+  margin-top:70px;
+  color:#333;
+  letter-spacing:1px;
+}
+
+/* Form card */
+
+form{
+  width:300px;
+  margin:25px auto;
+  padding:25px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* Inputs */
+
+input{
+  padding:9px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  outline:none;
+  transition:0.25s;
+}
+
+/* Focus effect */
+
+input:focus{
+  border-color:#4f46e5;
+  box-shadow:0 0 4px rgba(79,70,229,0.4);
+}
+
+/* Button */
+
+button{
+  margin-top:10px;
+  padding:9px;
+  border:none;
+  border-radius:6px;
+  background:#4f46e5;
+  color:white;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+/* Hover */
+
+button:hover{
+  background:#4338ca;
+}
+
+/* Error message */
+
+p{
+  text-align:center;
+  color:#ef4444;
+  font-weight:500;
+  margin-top:10px;
+}
