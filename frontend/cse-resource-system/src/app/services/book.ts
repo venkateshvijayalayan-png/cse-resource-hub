@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class Book {
 
   // Base API URL
-  private baseUrl = "https://cse-resource-hub.onrender.com";
+  private baseUrl = "https://backend-1qx8.onrender.com";
 
   constructor(private http: HttpClient) {}
 
