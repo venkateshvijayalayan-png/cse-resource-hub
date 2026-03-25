@@ -6,24 +6,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class Book {
 
-  // ✅ Updated API URL (Render backend)
-  api = "https://cse-resource-hub.onrender.com/books";
+  // Base API URL
+  private baseUrl = "https://cse-resource-hub.onrender.com";
 
-  constructor(private http: HttpClient){}
+  constructor(private http: HttpClient) {}
 
-  books:any[]=[];
-
-  Addbook(book:any)
-  {
-      return this.http.post(this.api, book);
+  // Add book
+  Addbook(book: any) {
+    return this.http.post(`${this.baseUrl}/books`, book);
   }
 
-  Getbook()
-  {
-      return this.http.get(this.api);
+  // Get all books
+  Getbooks() {
+    return this.http.get(`${this.baseUrl}/books`);
   }
 
-  Deletebook(id:any){
-      return this.http.delete(this.api + "/" + id);
+  // Delete book
+  Deletebook(id: any) {
+    return this.http.delete(`${this.baseUrl}/books/${id}`);
   }
 }
